@@ -1,5 +1,5 @@
 import Foundation
-import HTTP
+import HAPHTTP
 
 class Response {
     var status = Status.ok

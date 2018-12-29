@@ -2,7 +2,7 @@ import Cryptor
 import func Evergreen.getLogger
 import Foundation
 import SRP
-import HTTP
+import HAPHTTP
 
 fileprivate let logger = getLogger("hap.pairSetup")
 fileprivate typealias Session = PairSetupController.Session

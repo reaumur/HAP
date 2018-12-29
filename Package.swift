@@ -9,6 +9,7 @@ let package = Package(
         .executable(name: "hap-server", targets: ["hap-server"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/vapor/core.git", from: "3.4.0"),
         .package(url: "https://github.com/Bouke/CLibSodium.git", from: "1.0.0"),
         .package(url: "https://github.com/Bouke/SRP.git", from: "3.1.0"),
         .package(url: "https://github.com/Bouke/HKDF.git", from: "3.1.0"),
@@ -19,9 +20,8 @@ let package = Package(
     ],
     targets: [
         .target(name: "CQRCode"),
-        .target(name: "COperatingSystem"),
-        .target(name: "HTTP", dependencies: ["NIO", "NIOHTTP1", "NIOFoundationCompat", "COperatingSystem"]),
-        .target(name: "HAP", dependencies: ["SRP", "Cryptor", "Evergreen", "HKDF", "Regex", "CQRCode", "HTTP"]),
+        .target(name: "HAPHTTP"),
+        .target(name: "HAP", dependencies: ["SRP", "Cryptor", "Evergreen", "HKDF", "Regex", "CQRCode", "HAPHTTP", "COperatingSystem"]),
         .target(name: "hap-server", dependencies: ["HAP", "Evergreen"]),
         .testTarget(name: "HAPTests", dependencies: ["HAP"]),
     ]

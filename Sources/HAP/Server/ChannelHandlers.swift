@@ -2,7 +2,7 @@ import func Evergreen.getLogger
 import NIO
 import NIOHTTP1
 import Dispatch
-import HTTP
+import HAPHTTP
 import Foundation
 
 fileprivate let logger = getLogger("hap.nio")

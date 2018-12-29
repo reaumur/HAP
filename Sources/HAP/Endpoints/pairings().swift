@@ -1,6 +1,6 @@
 import Foundation
 import func Evergreen.getLogger
-import HTTP
+import HAPHTTP
 
 fileprivate let logger = getLogger("hap.endpoints.pairings")
 
