@@ -21,7 +21,7 @@ let package = Package(
     targets: [
         .target(name: "CQRCode"),
         .target(name: "HAPHTTP", dependencies: ["Async", "Bits", "Core", "Debugging", "NIO", "NIOHTTP1"]),
-        .target(name: "HAP", dependencies: ["SRP", "Cryptor", "Evergreen", "HKDF", "Regex", "CQRCode", "HTTP"]),
+        .target(name: "HAP", dependencies: ["SRP", "Cryptor", "Evergreen", "HKDF", "Regex", "CQRCode", "HAPHTTP"]),
         .target(name: "hap-server", dependencies: ["HAP", "Evergreen"]),
         .testTarget(name: "HAPTests", dependencies: ["HAP"]),
     ]
