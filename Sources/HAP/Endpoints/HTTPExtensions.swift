@@ -1,5 +1,5 @@
 import Foundation
-import HTTP
+import HAPHTTP
 
 extension HTTPResponse {
     static var noContent: HTTPResponse {

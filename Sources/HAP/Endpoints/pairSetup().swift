@@ -1,7 +1,7 @@
 import Cryptor
 import func Evergreen.getLogger
 import Foundation
-import HTTP
+import HAPHTTP
 import SRP
 
 fileprivate let logger = getLogger("hap.pairSetup")

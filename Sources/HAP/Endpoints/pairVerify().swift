@@ -1,6 +1,6 @@
 import func Evergreen.getLogger
 import Foundation
-import HTTP
+import HAPHTTP
 
 fileprivate let logger = getLogger("hap.endpoints.pair-verify")
 fileprivate typealias Session = PairVerifyController.Session

@@ -1,5 +1,5 @@
 import Foundation
-import HTTP
+import HAPHTTP
 
 import func Evergreen.getLogger
 fileprivate let logger = getLogger("hap.endpoints")

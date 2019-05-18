@@ -1,7 +1,7 @@
 import func Evergreen.getLogger
 import Dispatch
 import Foundation
-import HTTP
+import HAPHTTP
 import NIO
 import NIOHTTP1
 

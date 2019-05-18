@@ -1,6 +1,6 @@
 import Foundation
 import func Evergreen.getLogger
-import HTTP
+import HAPHTTP
 import NIO
 import NIOHTTP1
 

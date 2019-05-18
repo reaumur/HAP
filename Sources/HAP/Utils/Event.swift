@@ -1,6 +1,6 @@
 // swiftlint:disable unused_optional_binding
 import Foundation
-import HTTP
+import HAPHTTP
 
 struct Event {
     enum Error: Swift.Error {

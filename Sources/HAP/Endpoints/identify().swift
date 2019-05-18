@@ -1,5 +1,5 @@
 import Foundation
-import HTTP
+import HAPHTTP
 
 func identify(device: Device) -> Responder {
     return { context, request in

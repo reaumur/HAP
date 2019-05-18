@@ -235,7 +235,7 @@ enum PairError: UInt8 {
 }
 
 import Foundation
-import HTTP
+import HAPHTTP
 
 extension HTTPResponse {
     init(tags: PairTagTLV8) {

@@ -1,7 +1,7 @@
 // swiftlint:disable line_length
 import Foundation
 @testable import HAP
-import HTTP
+import HAPHTTP
 import NIO
 
 class MockContext: RequestContext {
